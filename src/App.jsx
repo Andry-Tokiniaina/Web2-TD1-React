@@ -31,7 +31,7 @@ function App() {
   let Debouches = [{
     titre : "Quelques débouchés",texte : "Formez-vous à une panoplie de métiers du numérique avec\
      nous et venez acquérir les fondements de la programmation (qui vous servira pour les différents métiers)\
-      ! Ce sont des métiers porteurs, des métiers du présent, des métiers du futur…\n\
+      ! Ce sont des métiers porteurs, des métiers du présent, des métiers du futur…\n \
       Développeur back end, développeur front end, développeurs mobile, chefs de projet, exploitants cloud,\
        analystes cybersécurité, pentesters, auditeur technique SSI, auditeur organisationnel SSI, administrateur\
         système et réseau, développeur de sécurité…"
@@ -82,7 +82,7 @@ function App() {
       </div>
 
       <div className="h-6/7 flex">
-        <div className="w-1/2 p-30">
+        <div className="w-3/5 p-30">
           <PargrapheTitre elements={Debouches}/>
         </div>
         <div>
