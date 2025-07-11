@@ -1,5 +1,6 @@
 import NavListe from "./components/NavListe"
 import Pargraphe from "./components/Paragraphe"
+import PargrapheTitre from "./components/ParagrapheTitre"
 
 function App() {
 
@@ -35,6 +36,12 @@ function App() {
        analystes cybersécurité, pentesters, auditeur technique SSI, auditeur organisationnel SSI, administrateur\
         système et réseau, développeur de sécurité…"
   }]
+  let ProgrammeText = [{
+    titre:"Le programme pédagogique",
+    texte:"Suivant le système LMD, jusqu’au Master, notre formation repose sur un programme pédagogique conçu\
+     en adéquation avec les attentes du marché. La formation est sanctionnée par un diplôme de Licence et de\
+      Master en Informatique reconnu par le MESupRes de Madagascar."
+  }]
 
   return (
     <>
@@ -63,9 +70,9 @@ function App() {
         </div>
       </div>
 
-      <div className="bg-blue-400 h-9/10 flex flex-col items-center py-10 px-50 text-center">
+      <div className="bg-indigo-400 h-9/10 flex flex-col items-center py-10 px-50 text-center">
         <h1 className="text-5xl font-bold font-serif">L'équipe pédagogique</h1>
-        <p className="text-xl">
+        <p className="text-lg">
           Notre équipe pédagogique se compose d’experts nationaux et internationaux de l’informatique,
            de la cybersécurité, de l’intelligence artificielle, dont un ingénieur chez Google.
             Ils sont passionnés par l’informatique et sont engagés vers l’excellence.
@@ -76,12 +83,33 @@ function App() {
 
       <div className="h-6/7 flex">
         <div className="w-1/2 p-30">
-          <Pargraphe elements={Debouches}/>
+          <PargrapheTitre elements={Debouches}/>
         </div>
         <div>
           <img src="src\assets\IMG-02-e1720543344824-987x1024-1.webp" alt="" className="h-3/4"/>
         </div>
       </div>
+
+      <div className="h-screen bg-gray-100 flex flex-col items-center p-15 text-center">
+        <h1 className="font-medium text-5xl font-serif text-blue-950 p-5">Domaines</h1>
+        <p className="text-blue-950 text-lg">
+          Au cours de vos trois ans de formation,
+           naviguez entre les domaines les plus porteurs
+            du numérique du présent et de l’avenir :
+        </p>
+      </div>
+
+      <div className="h-6/7 bg-indigo-400">
+
+      </div>
+
+      <div className="h-4/5 flex px-35 py-20">
+        <div className="w-1/2"><img src="src\assets\IMG-03-e1720537524581-1024x950-1.webp" alt="" className="h-1/1"/></div>
+        <div className="w-1/2">
+          <PargrapheTitre elements={ProgrammeText}/>
+        </div>
+      </div>
+      
     </div>
     </>
   )
