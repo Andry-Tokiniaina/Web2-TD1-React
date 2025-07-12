@@ -1,3 +1,4 @@
+import LogoListe from "./components/LogoListe"
 import NavListe from "./components/NavListe"
 import Pargraphe from "./components/Paragraphe"
 import PargrapheTitre from "./components/ParagrapheTitre"
@@ -42,6 +43,28 @@ function App() {
      en adéquation avec les attentes du marché. La formation est sanctionnée par un diplôme de Licence et de\
       Master en Informatique reconnu par le MESupRes de Madagascar."
   }]
+  let Techno = [{
+    titre: "Les technos et langages utilisées",
+    texte : "Nos étudiants sont formés à l’utilisation et à la maîtrise des langages de programmation Java et\
+     JavaScript. Ces deux langages occupent une place de choix dans le domaine du développement logiciel et du web,\
+      offrant une polyvalence et une robustesse appréciées par les développeurs à travers le monde."
+  }]
+  let TechnoListeLigne1 = [{url : "src\\assets\\Java.png"},{url : "src\\assets\\python.png"},{url : "src\\assets\\JS.png"},
+    {url : "src\\assets\\C.png"},{url : "src\\assets\\TS.png"}]
+  let TechnoListeLigne2 = [{url : "src\\assets\\docker.png"},{url : "src\\assets\\next.png"},
+    {url : "src\\assets\\aws.png"},{url : "src\\assets\\serverless.png"},{url : "src\\assets\\react.png"},{url : "src\\assets\\openapi.png"}
+  ]
+
+  let Partenaires = [{
+    titre:"Nos partenaires",
+    texte : "L’employabilité de nos étudiants se base sur la pertinence  de notre programme pédagogique et de la\
+     composition de notre corps enseignant mais aussi du soutien et la collaboration des entreprises partenaires"
+  }]
+  let PartenairesListe1 = [{url : "src\\assets\\LOGO-NEXTA.webp"},{url : "src\\assets\\PN_Logo_baseline_color_ENG.png"},
+    {url : "src\\assets\\Yooz-2023-Logo-2.webp"},{url : "src\\assets\\logo-etech.png"},{url : "src\\assets\\logo_emit.png"}]
+  let PartenairesListe2 = [{url : "src\\assets\\Logo-Numer-vf.png"},{url : "src\\assets\\bp-logo-full-1536x497.webp"},
+    {url : "src\\assets\\YIF_LOGO_512x512_BL_on_WH-1.webp"},{url :"src\\assets\\logo-kante-company-1.png"}]
+
 
   return (
     <>
@@ -107,7 +130,24 @@ function App() {
         <div className="w-1/2"><img src="src\assets\IMG-03-e1720537524581-1024x950-1.webp" alt="" className="h-1/1"/></div>
         <div className="w-1/2">
           <PargrapheTitre elements={ProgrammeText}/>
+          <div className="p-2 font-bold text-blue-950 text-lg border-2 border-blue-950 w-45">Notre Programme</div>
         </div>
+      </div>
+
+      <div className="h-screen">
+
+      </div>
+
+      <div className="h-5/6 text-center px-40 bg-gray-100">
+        <PargrapheTitre elements={Techno}/>
+        <LogoListe elements={TechnoListeLigne1}/>
+        <LogoListe elements={TechnoListeLigne2}/>
+      </div>
+
+      <div className="h-5/6 text-center px-40">
+        <PargrapheTitre elements={Partenaires}/>
+        <LogoListe elements={PartenairesListe1}/>
+        <LogoListe elements={PartenairesListe2}/>
       </div>
       
     </div>
