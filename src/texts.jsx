@@ -92,3 +92,10 @@ export let Admission = [{
 export let ProgrammePartText = ["Apprentissage théoriques en présentiel","Apprentissage théoriques en présentiel","Travaux individuels de l’étudiant"
     ,"Apprentissage en entreprise"
 ]
+export let EquipePedagogique = [
+  {
+    name: "",
+    image: "",
+    description : ""
+  },
+]
