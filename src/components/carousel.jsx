@@ -44,7 +44,7 @@ const MyCarousel = ({ elements, height = "90vh" }) => {
                     left : "17%",
                     margin : "auto"
                   }}>
-                <h1 className='font-bold text-5xl font-serif'>
+                <h1 className='font-bold text-6xl font-serif'>
                     Haute Ecole d'Informatique
                 </h1>
                 <br className='p-10'/>
