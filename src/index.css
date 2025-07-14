@@ -1,1 +1,14 @@
 @import "tailwindcss";
+/* Agrandir les points */
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 1; /* toujours visibles */
+}
+
+/* Mettre en valeur celui qui est actif */
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+  transform: scale(1.4);
+}

@@ -99,3 +99,8 @@ export let EquipePedagogique = [
     description : ""
   },
 ]
+export const carouselElements = [
+  { src: "/src/assets/1.jpeg", caption: "Image 1" },
+  { src: "/src/assets/2.jpeg", caption: "Image 2" },
+  { src: "/src/assets/3.jpeg", caption: "Image 3" },
+];

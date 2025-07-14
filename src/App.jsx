@@ -7,7 +7,8 @@ import PargrapheTitre from "./components/ParagrapheTitre"
 import { ProgrammePart } from "./components/ProgrammePart"
 import {Infos,liens,Debouches,Domaines,ProgrammeText,Techno,TechnoListeLigne1,
   TechnoListeLigne2,Partenaires,PartenairesListe1,PartenairesListe2,Admission,
-  ProgrammePartText} from "./texts"
+  ProgrammePartText,
+  carouselElements} from "./texts"
 import MyCarousel from "./components/carousel"
 import { Carousel } from "react-responsive-carousel"
 
@@ -30,7 +31,7 @@ function App() {
 
       {/* ******************************************************************************************************************************* */}
       <div>
-         <MyCarousel/>
+         <MyCarousel elements={carouselElements}/>
       </div>
 
       {/* ******************************************************************************************************************************* */}
