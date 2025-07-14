@@ -100,7 +100,12 @@ export let EquipePedagogique = [
   },
 ]
 export const carouselElements = [
-  { src: "/src/assets/1.jpeg", caption: "Image 1" },
-  { src: "/src/assets/2.jpeg", caption: "Image 2" },
-  { src: "/src/assets/3.jpeg", caption: "Image 3" },
+  { src: "/src/assets/1.jpeg", caption: "Image 1", texte :"Une infrastructure de qualité et un programme pédagogique qui répond au besoin du marché pour\
+     l'employabilité de nos étudiants." },
+  { src: "/src/assets/2.jpeg", caption: "Image 2" ,texte :"\"L'éducation est l'arme la plus puissante pour changer le monde\"\
+      selon Nelson Mandela. L'éducation dans l'informatique est une arme très puissante pour lutter contre la pauvreté à Madagascar \
+     selon HEI.\C'est notre mission" },
+  { src: "/src/assets/3.jpeg", caption: "Image 3" ,texte :"Des entreprises partenaires et une équipe déagogique et\
+     administrative qui travaille sans relâche pour la\
+    montée en compétences de nos étudiants"},
 ];

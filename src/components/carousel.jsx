@@ -26,41 +26,66 @@ const MyCarousel = ({ elements, height = "90vh" }) => {
         }}
       >
         {elements.map((item, index) => (
-          <SwiperSlide key={index}>
-            <div style={{ position: "relative", width: "100%" }}>
-              <img
-                src={item.src}
-                alt={`Slide ${index + 1}`}
-                style={{
-                  width: "100%",
-                  height: height,
-                  objectFit: "cover",
-                }}
-              />
-              <p className='text-white w-2/3 text-center text-2xl' style={
-                  {
-                    position : "absolute",
-                    top : "24%",
-                    left : "17%",
-                    margin : "auto"
-                  }}>
-                <h1 className='font-bold text-6xl font-serif'>
-                    Haute Ecole d'Informatique
-                </h1>
-                <br className='p-10'/>
-                "Des entreprises partenaires et une équipe déagogique et administrative qui travaille sans relâche pour la
-                 montée en compétences de nos étudiants"
+        <SwiperSlide key={index}>
+          <div style={{ position: "relative", width: "100%" }}>
+            <img
+              src={item.src}
+              alt={`Slide ${index + 1}`}
+              style={{
+                width: "100%",
+                height: height,
+                objectFit: "cover",
+              }}
+            />
+
+            {/* Overlay de texte */}
+            <div
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                padding: "2rem",
+                boxSizing: "border-box",
+                textAlign: "center",
+              }}
+            >
+              {/* Titre principal */}
+              <h1 className="text-white font-bold text-5xl md:text-6xl font-serif mb-6">
+                Haute Ecole d'Informatique
+              </h1>
+
+              {/* Texte dynamique */}
+              <p className="text-white text-xl md:text-2xl mb-8 w-full md:w-2/3">
+                {item.texte}
               </p>
-                  <div className='flex w-1/1 justify-around' style={{
-                    position : "absolute",
-                    top : "75%"
-                  }}>
-                    <div className='bg-white text-blue-950 px-7 py-5 font-bold text-2xl rounded-md'>Inscrivez vous ici</div>
-                    <div className='bg-yellow-500 text-white px-7 py-5 font-bold text-2xl rounded-md'>Emploi du temps</div>
-                    <div className='bg-blue-950 text-white px-7 py-5 font-bold text-2xl rounded-md'>Programme pédagogique</div>
-                  </div>
+
+              {/* Boutons */}
+              <div className="flex flex-wrap justify-center gap-6 mb-10">
+                <div className="bg-white text-blue-950 px-7 py-4 font-bold text-xl rounded-md">
+                  Inscrivez-vous ici
+                </div>
+                <div className="bg-yellow-500 text-white px-7 py-4 font-bold text-xl rounded-md">
+                  Emploi du temps
+                </div>
+                <div className="bg-blue-950 text-white px-7 py-4 font-bold text-xl rounded-md">
+                  Programme pédagogique
+                </div>
+              </div>
+
+              {/* Texte bas de page (juste au-dessus des cercles) */}
+              <div className="text-white text-sm absolute bottom-4 w-full text-center">
+                Habilitation MESupRES, suivant l'arrêté n°31309/2023
+              </div>
             </div>
-          </SwiperSlide>
+          </div>
+        </SwiperSlide>
+
         ))}
         {/* Les boutons flèches personnalisés */}
         <div className="swiper-button-prev" style={arrowStyle}></div>
