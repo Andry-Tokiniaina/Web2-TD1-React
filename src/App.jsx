@@ -162,7 +162,12 @@ function App() {
           </ul>
         </div>
         <div className="w-1/6">
-          2
+          <h1 className="font-bold text-2xl text-white">Medias sociaux</h1>
+          <div className="flex">
+            <div className="bg-yellow-400 h-1/20 w-3/10 m-5 text-white font-bold text-2xl p-5"style={{borderRadius:"50%"}}>F</div>
+            <div className="bg-yellow-400 h-1/20 w-3/10 m-5 text-white font-bold text-2xl p-5"style={{borderRadius:"50%"}}>in</div>
+            <div className="bg-yellow-400 h-1/20 w-3/10 m-5 text-white font-bold text-2xl p-5"style={{borderRadius:"50%"}}>.</div>
+          </div>
         </div>
       </div>
 
