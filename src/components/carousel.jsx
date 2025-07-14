@@ -79,7 +79,7 @@ const MyCarousel = ({ elements, height = "90vh" }) => {
               </div>
 
               {/* Texte bas de page (juste au-dessus des cercles) */}
-              <div className="text-white text-sm absolute bottom-4 w-full text-center">
+              <div className="text-white text-sm absolute bottom-4 w-full text-center font-bold">
                 Habilitation MESupRES, suivant l'arrêté n°31309/2023
               </div>
             </div>

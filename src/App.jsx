@@ -8,9 +8,11 @@ import { ProgrammePart } from "./components/ProgrammePart"
 import {Infos,liens,Debouches,Domaines,ProgrammeText,Techno,TechnoListeLigne1,
   TechnoListeLigne2,Partenaires,PartenairesListe1,PartenairesListe2,Admission,
   ProgrammePartText,
-  carouselElements} from "./texts"
+  carouselElements,
+  EquipePedagogiqueListe} from "./texts"
 import MyCarousel from "./components/carousel"
 import { Carousel } from "react-responsive-carousel"
+import CarouselEquipe from "./components/CarouselEquipe"
 
 function App() {
 
@@ -55,6 +57,7 @@ function App() {
            Nous sommes conscients que cette équipe est la pierre angulaire de l’employabilité de nos étudiants,
             elle a été soigneusement sélectionnée.
         </p>
+        <CarouselEquipe items={EquipePedagogiqueListe}/>
       </div>
 
       {/* ******************************************************************************************************************************* */}
