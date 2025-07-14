@@ -110,19 +110,19 @@ export const carouselElements = [
     montée en compétences de nos étudiants"},
 ];
 export let EquipePedagogiqueListe = [{
-  image : "src\\assets\\Parison-e1716502987165-300x300.png",title : "",description : ""
+  image : "src\\assets\\Parison-e1716502987165-300x300.png",title : "Julien RAJERISON",description : "Lead developper| Fondateur de l'association Techzara Madagascar"
 },{
-  image : "src\\assets\\5746AC1E761A42D1B7D89496C9A6BE9B_edited-e1716502720974-300x300.jpg",title : "",description : ""
+  image : "src\\assets\\5746AC1E761A42D1B7D89496C9A6BE9B_edited-e1716502720974-300x300.jpg",title : "Julien RAJERISON",description : "Lead developper| Fondateur de l'association Techzara Madagascar"
 },{
-  image : "src\\assets\\Tahina-OK-e1716502943928-300x300.png",title : "",description : ""
+  image : "src\\assets\\Tahina-OK-e1716502943928-300x300.png",title : "Julien RAJERISON",description : "Lead developper| Fondateur de l'association Techzara Madagascar"
 },{
-  image : "src\\assets\\97-portraits-97_edited-e1716502895676-300x300.jpg",title : "",description : ""
+  image : "src\\assets\\97-portraits-97_edited-e1716502895676-300x300.jpg",title : "Julien RAJERISON",description : "Lead developper| Fondateur de l'association Techzara Madagascar"
 },{
-  image : "src\\assets\\Mirado-300x300.webp",title : "",description : ""
+  image : "src\\assets\\Mirado-300x300.webp",title : "Julien RAJERISON",description : "Lead developper| Fondateur de l'association Techzara Madagascar"
 },{
-  image : "src\\assets\\Julien-300x300.webp",title : "",description : ""
+  image : "src\\assets\\Julien-300x300.webp",title : "Julien RAJERISON",description : "Lead developper| Fondateur de l'association Techzara Madagascar"
 },{
-  image : "src\\assets\\ryan-min-300x300.webp",title : "",description : ""
+  image : "src\\assets\\ryan-min-300x300.webp",title : "Julien RAJERISON",description : "Lead developper| Fondateur de l'association Techzara Madagascar"
 },{
-  image : "src\\assets\\Jean-Aime-Maxa-modified-300x300.jpg",title : "",description : ""
+  image : "src\\assets\\Jean-Aime-Maxa-modified-300x300.jpg",title : "Julien RAJERISON",description : "Lead developper| Fondateur de l'association Techzara Madagascar"
 }]
